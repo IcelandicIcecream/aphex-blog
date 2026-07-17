@@ -1,27 +1,30 @@
-let base = "";
-let assets = base;
-const app_dir = "_app";
-const relative = true;
-const initial = { base, assets };
-const initial_base = initial.base;
+//#region ../../node_modules/.pnpm/@sveltejs+kit@2.59.1_@opentelemetry+api@1.9.0_@sveltejs+vite-plugin-svelte@7.2.0_svelte_b04ba523657186a84b6a74c1243122db/node_modules/@sveltejs/kit/src/runtime/app/paths/internal/server.js
+var base = "";
+var assets = base;
+var app_dir = "_app";
+var initial = {
+	base,
+	assets
+};
+/**
+* `base` could be overridden during rendering to be relative;
+* this one's the original non-relative base path
+*/
+var initial_base = initial.base;
+/**
+* @param {{ base: string, assets: string }} paths
+*/
 function override(paths) {
-  base = paths.base;
-  assets = paths.assets;
+	base = paths.base;
+	assets = paths.assets;
 }
 function reset() {
-  base = initial.base;
-  assets = initial.assets;
+	base = initial.base;
+	assets = initial.assets;
 }
+/** @param {string} path */
 function set_assets(path) {
-  assets = initial.assets = path;
+	assets = initial.assets = path;
 }
-export {
-  app_dir as a,
-  base as b,
-  assets as c,
-  reset as d,
-  initial_base as i,
-  override as o,
-  relative as r,
-  set_assets as s
-};
+//#endregion
+export { override as a, initial_base as i, assets as n, reset as o, base as r, set_assets as s, app_dir as t };

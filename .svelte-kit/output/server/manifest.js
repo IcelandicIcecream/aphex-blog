@@ -10,7 +10,7 @@ return {
 	assets: new Set(["images/aphex-darkmode.png","images/aphex-lightmode.png","robots.txt","uploads/scheming-villain-emoticon-rubbing-his-600nw-1194509842.webp"]),
 	mimeTypes: {".png":"image/png",".txt":"text/plain",".webp":"image/webp"},
 	_: {
-		client: {start:"_app/immutable/entry/start.CrZU3sIs.js",app:"_app/immutable/entry/app.N1p9e6po.js",imports:["_app/immutable/entry/start.CrZU3sIs.js","_app/immutable/chunks/ByAwN02p.js","_app/immutable/chunks/BMqZ2OJ-.js","_app/immutable/chunks/CwiXU5Jn.js","_app/immutable/entry/app.N1p9e6po.js","_app/immutable/chunks/PPVm8Dsz.js","_app/immutable/chunks/BMqZ2OJ-.js","_app/immutable/chunks/CWiwdRed.js","_app/immutable/chunks/CVb7NyXy.js","_app/immutable/chunks/CJzah9id.js","_app/immutable/chunks/CwiXU5Jn.js","_app/immutable/chunks/BLayZged.js","_app/immutable/chunks/pvaRr2Fv.js","_app/immutable/chunks/BZPeipNi.js","_app/immutable/chunks/I8AlH2a-.js","_app/immutable/chunks/BLu3mf8N.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.eSCYK4Fr.js",app:"_app/immutable/entry/app.BInfvP2_.js",imports:["_app/immutable/entry/start.eSCYK4Fr.js","_app/immutable/chunks/CaaM2rxu.js","_app/immutable/chunks/DDLLnUFm.js","_app/immutable/chunks/QTnfLwEv.js","_app/immutable/entry/app.BInfvP2_.js","_app/immutable/chunks/DDLLnUFm.js","_app/immutable/chunks/QTnfLwEv.js","_app/immutable/chunks/HclGiUj8.js","_app/immutable/chunks/xihTtKlq.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),

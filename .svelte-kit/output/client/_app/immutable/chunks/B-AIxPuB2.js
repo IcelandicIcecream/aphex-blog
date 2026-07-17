@@ -1,0 +1,1 @@
+import{i as e}from"./IAydn-XI.js";function t(t,n){return(e(t?.metaTitle??``)||e(n??``)||``).trim()}function n(t,n){return(e(t?.metaDescription??``)||e(n??``)||``).trim()}function r(e){return e?.ogImage?.asset?.url??null}export{r as n,t as r,n as t};
