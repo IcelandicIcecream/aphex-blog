@@ -1,6 +1,6 @@
 import { json } from "@sveltejs/kit";
 import { z } from "zod";
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/api/schemas/instance.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/api/schemas/instance.js
 var updateInstanceSettingsRequest = z.object({ allowUserOrgCreation: z.boolean().optional() }).strict();
 //#endregion
 //#region src/routes/api/instance-settings/+server.ts

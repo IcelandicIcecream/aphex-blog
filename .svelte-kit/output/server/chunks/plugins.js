@@ -8,7 +8,7 @@ import { t as Button } from "./button.js";
 import { t as Input } from "./input.js";
 import { t as Icon } from "./Icon.js";
 import { tv } from "tailwind-variants";
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/schema-utils/desugar.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/schema-utils/desugar.js
 /**
 * Layer the authored field back over the built one.
 *
@@ -86,7 +86,7 @@ function desugarFieldType(schemas, options) {
 	} : schema);
 }
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/plugins/types.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/plugins/types.js
 /**
 * Identity helper that pins the `CMSPlugin` type for authoring. Kept a pure
 * pass-through so bundlers can tree-shake unused plugins; validation (duplicate
@@ -302,7 +302,7 @@ function Sparkles($$renderer, $$props) {
 	});
 }
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+plugin-seo@0.1.0_@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af__@_8a5f1a256dbf8c550a6bb4084759fb8e/node_modules/@aphexcms/plugin-seo/dist/config.js
+//#region ../../node_modules/.pnpm/@aphexcms+plugin-seo@0.1.0_@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af__@_9aed0faca617a387052bd9117a03c68f/node_modules/@aphexcms/plugin-seo/dist/config.js
 /** Conventional field names to scan when a schema doesn't pin one down. */
 var TITLE_FIELDS = [
 	"title",
@@ -382,7 +382,7 @@ function seoGenerators() {
 	return current;
 }
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+plugin-seo@0.1.0_@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af__@_8a5f1a256dbf8c550a6bb4084759fb8e/node_modules/@aphexcms/plugin-seo/dist/GenerateSeoAction.svelte
+//#region ../../node_modules/.pnpm/@aphexcms+plugin-seo@0.1.0_@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af__@_9aed0faca617a387052bd9117a03c68f/node_modules/@aphexcms/plugin-seo/dist/GenerateSeoAction.svelte
 function GenerateSeoAction($$renderer, $$props) {
 	$$renderer.component(($$renderer) => {
 		let { action } = $$props;
@@ -431,7 +431,7 @@ function GenerateSeoAction($$renderer, $$props) {
 	});
 }
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+plugin-seo@0.1.0_@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af__@_8a5f1a256dbf8c550a6bb4084759fb8e/node_modules/@aphexcms/plugin-seo/dist/SeoTool.svelte
+//#region ../../node_modules/.pnpm/@aphexcms+plugin-seo@0.1.0_@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af__@_9aed0faca617a387052bd9117a03c68f/node_modules/@aphexcms/plugin-seo/dist/SeoTool.svelte
 function SeoTool($$renderer, $$props) {
 	$$renderer.component(($$renderer) => {
 		let { tool } = $$props;
@@ -573,7 +573,7 @@ function SeoTool($$renderer, $$props) {
 	});
 }
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+plugin-seo@0.1.0_@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af__@_8a5f1a256dbf8c550a6bb4084759fb8e/node_modules/@aphexcms/plugin-seo/dist/MetaLengthInput.svelte
+//#region ../../node_modules/.pnpm/@aphexcms+plugin-seo@0.1.0_@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af__@_9aed0faca617a387052bd9117a03c68f/node_modules/@aphexcms/plugin-seo/dist/MetaLengthInput.svelte
 function MetaLengthInput($$renderer, $$props) {
 	$$renderer.component(($$renderer) => {
 		let { field, value, onUpdate, readonly = false, validationClasses } = $$props;
@@ -608,7 +608,7 @@ function MetaLengthInput($$renderer, $$props) {
 	});
 }
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+plugin-seo@0.1.0_@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af__@_8a5f1a256dbf8c550a6bb4084759fb8e/node_modules/@aphexcms/plugin-seo/dist/SeoPreview.svelte
+//#region ../../node_modules/.pnpm/@aphexcms+plugin-seo@0.1.0_@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af__@_9aed0faca617a387052bd9117a03c68f/node_modules/@aphexcms/plugin-seo/dist/SeoPreview.svelte
 function SeoPreview($$renderer, $$props) {
 	$$renderer.component(($$renderer) => {
 		let { documentData, schemaType } = $$props;
@@ -720,7 +720,7 @@ function injectSeoField(schema, group = "seo") {
 	};
 }
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+plugin-seo@0.1.0_@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af__@_8a5f1a256dbf8c550a6bb4084759fb8e/node_modules/@aphexcms/plugin-seo/dist/index.js
+//#region ../../node_modules/.pnpm/@aphexcms+plugin-seo@0.1.0_@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af__@_9aed0faca617a387052bd9117a03c68f/node_modules/@aphexcms/plugin-seo/dist/index.js
 /**
 * First-party SEO plugin — feature-comparable to @payloadcms/plugin-seo.
 *
@@ -806,7 +806,7 @@ function Button_group($$renderer, $$props) {
 	});
 }
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+plugin-color-picker@0.1.0_@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb_a39e1f8882e15929930b9cee10e2ac32/node_modules/@aphexcms/plugin-color-picker/dist/ColorPicker.svelte
+//#region ../../node_modules/.pnpm/@aphexcms+plugin-color-picker@0.1.0_@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb_d6a76e32abc196d3daa0f3a39507b590/node_modules/@aphexcms/plugin-color-picker/dist/ColorPicker.svelte
 function ColorPicker($$renderer, $$props) {
 	$$renderer.component(($$renderer) => {
 		let { value = "#000000", class: className, allowOpacity = false, defaultFormat = "hex", formats = [
@@ -1252,7 +1252,7 @@ function ColorPicker($$renderer, $$props) {
 	});
 }
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+plugin-color-picker@0.1.0_@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb_a39e1f8882e15929930b9cee10e2ac32/node_modules/@aphexcms/plugin-color-picker/dist/color.js
+//#region ../../node_modules/.pnpm/@aphexcms+plugin-color-picker@0.1.0_@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb_d6a76e32abc196d3daa0f3a39507b590/node_modules/@aphexcms/plugin-color-picker/dist/color.js
 /**
 * Color value model + conversions for the rich (object) color field.
 *
@@ -1384,7 +1384,7 @@ function parseColorToValue(css) {
 	};
 }
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+plugin-color-picker@0.1.0_@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb_a39e1f8882e15929930b9cee10e2ac32/node_modules/@aphexcms/plugin-color-picker/dist/ColorInput.svelte
+//#region ../../node_modules/.pnpm/@aphexcms+plugin-color-picker@0.1.0_@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb_d6a76e32abc196d3daa0f3a39507b590/node_modules/@aphexcms/plugin-color-picker/dist/ColorInput.svelte
 function ColorInput($$renderer, $$props) {
 	$$renderer.component(($$renderer) => {
 		let { field, value, onUpdate, validationClasses, readonly = false } = $$props;
@@ -1431,12 +1431,12 @@ function ColorInput($$renderer, $$props) {
 	});
 }
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+plugin-color-picker@0.1.0_@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb_a39e1f8882e15929930b9cee10e2ac32/node_modules/@aphexcms/plugin-color-picker/dist/constants.js
+//#region ../../node_modules/.pnpm/@aphexcms+plugin-color-picker@0.1.0_@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb_d6a76e32abc196d3daa0f3a39507b590/node_modules/@aphexcms/plugin-color-picker/dist/constants.js
 /** The input key this plugin registers. Use it in schemas: `input: COLOR_INPUT` (`'color'`).
 *  Kept in a Svelte-free module so the server-safe `./schema` export can import it. */
 var COLOR_INPUT = "color";
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+plugin-color-picker@0.1.0_@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb_a39e1f8882e15929930b9cee10e2ac32/node_modules/@aphexcms/plugin-color-picker/dist/schema.js
+//#region ../../node_modules/.pnpm/@aphexcms+plugin-color-picker@0.1.0_@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb_d6a76e32abc196d3daa0f3a39507b590/node_modules/@aphexcms/plugin-color-picker/dist/schema.js
 /** The `type` keyword this plugin desugars (authored as `{ type: 'color' }`). */
 var COLOR_TYPE = "color";
 var numberSub = (name) => ({
@@ -1524,7 +1524,7 @@ function expandColorTypes(schemas) {
 	});
 }
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+plugin-color-picker@0.1.0_@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb_a39e1f8882e15929930b9cee10e2ac32/node_modules/@aphexcms/plugin-color-picker/dist/index.js
+//#region ../../node_modules/.pnpm/@aphexcms+plugin-color-picker@0.1.0_@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb_d6a76e32abc196d3daa0f3a39507b590/node_modules/@aphexcms/plugin-color-picker/dist/index.js
 /**
 * Color plugin — a rich color field widget for AphexCMS.
 *

@@ -1,4 +1,4 @@
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/utils/reference-walk.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/utils/reference-walk.js
 /**
 * Collect all referenced document IDs from a doc's data. The `schema` and
 * `registry` params are accepted for API compatibility but no longer used —

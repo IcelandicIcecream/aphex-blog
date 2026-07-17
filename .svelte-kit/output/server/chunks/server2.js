@@ -14,7 +14,7 @@ import { createCipheriv, createDecipheriv, createHash, randomBytes } from "node:
 import { Hono } from "hono";
 import { bodyLimit } from "hono/body-limit";
 import { zValidator } from "@hono/zod-validator";
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/auth/auth-errors.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/auth/auth-errors.js
 var AuthError = class extends Error {
 	code;
 	constructor(code, message) {
@@ -24,7 +24,7 @@ var AuthError = class extends Error {
 	}
 };
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/engine.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/engine.js
 var CMSEngine = class {
 	db;
 	config;
@@ -110,7 +110,7 @@ function createCMS(config, dbAdapter) {
 	return cmsInstance;
 }
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/auth/auth-hooks.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/auth/auth-hooks.js
 /**
 * Populate `auth.capabilities` for session auth via RolesService.
 * Runs once per request so downstream permission checks stay synchronous.
@@ -205,7 +205,7 @@ async function handleAuthHook(event, config, authProvider, db, rolesService) {
 	return null;
 }
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/preview/perspective.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/preview/perspective.js
 /**
 * Resolve the content perspective for a SvelteKit load function.
 *
@@ -227,7 +227,7 @@ function getPreviewPerspective(auth, url) {
 	return url.searchParams.has("aphex-preview") && isAuthenticated ? "draft" : "published";
 }
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/storage/adapters/local-storage-adapter.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/storage/adapters/local-storage-adapter.js
 var DEFAULT_MAX_FILE_SIZE = 10 * 1024 * 1024;
 /**
 * Pure local file system storage adapter - only handles files
@@ -391,7 +391,7 @@ var LocalStorageAdapter = class {
 	}
 };
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/storage/providers/storage.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/storage/providers/storage.js
 /**
 * Local file system provider
 */
@@ -446,7 +446,7 @@ function createStorageAdapter(providerName, config) {
 	return provider.createAdapter(config);
 }
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/preview/assets.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/preview/assets.js
 /**
 * Collect every asset `_ref` reachable in a value. Image and file fields, and
 * portable-text image blocks, all carry `{ asset: { _ref } }`, so one generic walk
@@ -488,7 +488,7 @@ function injectAssetData(value, resolved) {
 	for (const key in obj) injectAssetData(obj[key], resolved);
 }
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/services/asset-service.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/services/asset-service.js
 /**
 * Asset service - coordinates storage and database operations
 * Maintains separation of concerns while providing unified asset management
@@ -667,7 +667,7 @@ var AssetService = class {
 	}
 };
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/services/roles-service.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/services/roles-service.js
 /**
 * RolesService — caches per-org role capability lookups.
 *
@@ -745,7 +745,7 @@ function cacheKey(organizationId, roleName) {
 	return `roles:${organizationId}:${roleName}`;
 }
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/security/secret-crypto.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/security/secret-crypto.js
 var VERSION = "v1";
 var ALGORITHM = "aes-256-gcm";
 var IV_BYTES = 12;
@@ -792,7 +792,7 @@ function isEncryptedSecret(value) {
 	return typeof value === "string" && value.startsWith(`${VERSION}:`);
 }
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/services/plugin-settings-service.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/services/plugin-settings-service.js
 /** Placeholder shown to the client for a secret that has a stored value. */
 var SECRET_MASK = "••••••";
 var isSecret = (f) => f.type === "secret";
@@ -971,7 +971,7 @@ var PluginSettingsService = class {
 	}
 };
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/schemas.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/schemas.js
 var schemasRouter = new Hono().get("/", (c) => {
 	const { cmsEngine } = c.var.aphexCMS;
 	const schemas = cmsEngine.config.schemaTypes;
@@ -993,7 +993,7 @@ var schemasRouter = new Hono().get("/", (c) => {
 	});
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/api/schemas/documents.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/api/schemas/documents.js
 var jsonRecord = z.record(z.string(), z.unknown());
 var documentMetaSchema = z.object({
 	status: z.enum([
@@ -1126,7 +1126,7 @@ z.object({
 	message: z.string().optional()
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/documents.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/documents.js
 var DEFAULT_PAGE_SIZE$1 = 20;
 var DEFAULT_PAGE$1 = 1;
 var documentsRouter = new Hono().get("/", zValidator("query", listDocumentsQuery, (result, c) => {
@@ -1271,7 +1271,7 @@ var documentsRouter = new Hono().get("/", zValidator("query", listDocumentsQuery
 	}
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/documents-by-id.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/documents-by-id.js
 var documentsByIdRouter = new Hono().get("/:id", async (c) => {
 	try {
 		const { localAPI } = c.var.aphexCMS;
@@ -1456,7 +1456,7 @@ var documentsByIdRouter = new Hono().get("/:id", async (c) => {
 	}
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/documents-publish.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/documents-publish.js
 var documentsPublishRouter = new Hono().post("/:id/publish", async (c) => {
 	try {
 		const { localAPI } = c.var.aphexCMS;
@@ -1556,7 +1556,7 @@ var documentsPublishRouter = new Hono().post("/:id/publish", async (c) => {
 	}
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/documents-query.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/documents-query.js
 var DEFAULT_PAGE_SIZE = 20;
 var DEFAULT_PAGE = 1;
 /**
@@ -1622,7 +1622,7 @@ var documentsQueryRouter = new Hono().post("/query", zValidator("json", queryDoc
 	}
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/document-versions.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/document-versions.js
 var documentVersionsRouter = new Hono().get("/:id/versions", zValidator("query", listVersionsQuery, (result, c) => {
 	if (!result.success) return c.json({
 		success: false,
@@ -1747,7 +1747,7 @@ var documentVersionsRouter = new Hono().get("/:id/versions", zValidator("query",
 	}
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/api/schemas/assets.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/api/schemas/assets.js
 var assetSchema = z.object({
 	id: z.string(),
 	organizationId: z.string(),
@@ -1832,7 +1832,7 @@ z.object({
 	data: z.record(z.string(), z.number())
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/assets.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/assets.js
 var assetsRouter = new Hono().get("/", zValidator("query", listAssetsQuery, (result, c) => {
 	if (!result.success) return c.json({
 		success: false,
@@ -1963,7 +1963,7 @@ var assetsRouter = new Hono().get("/", zValidator("query", listAssetsQuery, (res
 	}
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/assets-by-id.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/assets-by-id.js
 var assetsByIdRouter = new Hono().get("/:id", async (c) => {
 	try {
 		const { assetService } = c.var.aphexCMS;
@@ -2090,7 +2090,7 @@ var assetsByIdRouter = new Hono().get("/:id", async (c) => {
 	}
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/assets-bulk.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/assets-bulk.js
 var assetsBulkRouter = new Hono().delete("/bulk", zValidator("json", bulkDeleteAssetsRequest, (result, c) => {
 	if (!result.success) return c.json({
 		success: false,
@@ -2143,7 +2143,7 @@ var assetsBulkRouter = new Hono().delete("/bulk", zValidator("json", bulkDeleteA
 	}
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/assets-references.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/assets-references.js
 /**
 * Asset references endpoints. Two distinct paths sharing one router file:
 *   - GET  /:id/references          → docs that reference one asset
@@ -2233,7 +2233,7 @@ var assetsReferencesRouter = new Hono().get("/:id/references", async (c) => {
 	}
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/api/schemas/organizations.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/api/schemas/organizations.js
 var roleNameSchema$1 = z.string().trim().min(1).max(100).regex(/^[a-zA-Z0-9 _-]+$/);
 var organizationRoleSchema = roleNameSchema$1;
 var invitableRoleSchema = roleNameSchema$1.refine((v) => v !== "owner", { message: "owner cannot be assigned via invitation" });
@@ -2261,7 +2261,7 @@ var updateMemberRoleRequest = z.object({
 	role: organizationRoleSchema
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/organizations.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/organizations.js
 var organizationsRouter = new Hono().get("/", async (c) => {
 	try {
 		const { databaseAdapter } = c.var.aphexCMS;
@@ -2347,7 +2347,7 @@ var organizationsRouter = new Hono().get("/", async (c) => {
 	}
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/organizations-by-id.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/organizations-by-id.js
 var organizationsByIdRouter = new Hono().get("/:id", async (c) => {
 	try {
 		const { databaseAdapter } = c.var.aphexCMS;
@@ -2485,7 +2485,7 @@ var organizationsByIdRouter = new Hono().get("/:id", async (c) => {
 	}
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/organizations-invitations.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/organizations-invitations.js
 /**
 * Note: in studio, invitations are wrapped by a SvelteKit `+server.ts`
 * that adds email sending after the invite row is created. While that
@@ -2601,7 +2601,7 @@ var organizationsInvitationsRouter = new Hono().post("/invitations", zValidator(
 	}
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/organizations-members.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/organizations-members.js
 var organizationsMembersRouter = new Hono().get("/members", async (c) => {
 	try {
 		const { databaseAdapter } = c.var.aphexCMS;
@@ -2756,7 +2756,7 @@ var organizationsMembersRouter = new Hono().get("/members", async (c) => {
 	}
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/organizations-switch.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/organizations-switch.js
 var organizationsSwitchRouter = new Hono().post("/switch", zValidator("json", switchOrganizationRequest, (result, c) => {
 	if (!result.success) return c.json({
 		success: false,
@@ -2800,7 +2800,7 @@ var organizationsSwitchRouter = new Hono().post("/switch", zValidator("json", sw
 	}
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/api/schemas/roles.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/api/schemas/roles.js
 var capabilitySchema = z.string().min(1).max(100).regex(/^[a-zA-Z0-9]+([.:][a-zA-Z0-9]+)+$/, { message: "Invalid capability id format" });
 var roleNameSchema = z.string().trim().min(1).max(100).regex(/^[a-zA-Z0-9 _-]+$/, { message: "Role name may only contain letters, numbers, spaces, underscores, and hyphens" });
 var createRoleRequest = z.object({
@@ -2819,7 +2819,7 @@ var updateRoleRequest = z.object({
 	capabilities: v.capabilities ? normalizeCapabilities(v.capabilities) : void 0
 }));
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/roles.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/roles.js
 /**
 * Authoritative capability validation against the runtime registry. The zod schema
 * only guards the id *format*; this rejects ids that don't actually exist in the
@@ -3028,10 +3028,10 @@ var rolesRouter = new Hono().get("/", async (c) => {
 	}
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/api/schemas/plugin-settings.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/api/schemas/plugin-settings.js
 var savePluginSettingsRequest = z.object({ values: z.record(z.string(), z.unknown()) });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/plugin-settings.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/plugin-settings.js
 /**
 * Require a session with `plugin.settings.manage`. Returns the narrowed session auth
 * to proceed, or a 401/403 Response to short-circuit — so callers get a typed org id
@@ -3129,7 +3129,7 @@ var pluginSettingsRouter = new Hono().get("/", async (c) => {
 	}
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/api/schemas/user.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/api/schemas/user.js
 var updateUserRequest = z.object({
 	name: z.string().min(1).optional(),
 	image: z.string().min(1).nullable().optional()
@@ -3144,7 +3144,7 @@ var resetPasswordRequest = z.object({
 	newPassword: z.string().min(8)
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/user-preferences.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/user-preferences.js
 var userPreferencesRouter = new Hono().get("/cms-preference", async (c) => {
 	try {
 		const { databaseAdapter } = c.var.aphexCMS;
@@ -3200,7 +3200,7 @@ var userPreferencesRouter = new Hono().get("/cms-preference", async (c) => {
 	}
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/user.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/routes/user.js
 /**
 * User account routes that delegate to the configured AuthProvider.
 *
@@ -3308,7 +3308,7 @@ var userRouter = new Hono().patch("/", zValidator("json", updateUserRequest, (re
 	}
 });
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/index.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/server/api/index.js
 /**
 * Build the Aphex API Hono app shell.
 *
@@ -3404,7 +3404,7 @@ function toHonoHandler(skHandler) {
 	};
 }
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/hooks.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/hooks.js
 /**
 * Wrap a plugin route handler so it enforces `requiredCapabilities` before running.
 * 401 when there's no authenticated principal at all; 403 when authenticated but
@@ -3544,7 +3544,7 @@ function createCMSHook(config) {
 	};
 }
 //#endregion
-//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.1_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/routes/assets-cdn.js
+//#region ../../node_modules/.pnpm/@aphexcms+cms-core@9.5.2_735fe546a3765c13e723ad4ebb2a94af/node_modules/@aphexcms/cms-core/dist/routes/assets-cdn.js
 var GET = async ({ params, locals, setHeaders, request }) => {
 	try {
 		const { assetService, databaseAdapter, storageAdapter, cmsEngine, config } = locals.aphexCMS;
