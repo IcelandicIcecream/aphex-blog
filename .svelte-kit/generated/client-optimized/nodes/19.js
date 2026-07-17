@@ -1,1 +1,0 @@
-export { default as component } from "../../../../src/routes/(site)/tag/[slug]/+page.svelte";
